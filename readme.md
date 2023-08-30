@@ -40,3 +40,5 @@ git fetch 从远程仓库获取代码
 git merge 融合不同分支
 git pull 下载远程代码并合并
 git push 长传远程代码并合并
+
+git push -u origin master 连不上就用这个
