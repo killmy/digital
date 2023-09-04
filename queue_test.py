@@ -33,5 +33,32 @@ class Array_Queue(object):
         if self.isEmpty():
             return -1
         return self.queue_list[self.rear]
-
+class Node(object):
+    def __init__(self,x) -> None:
+        self.val = x
+        self.next = next
+class List_Queue(object):
+    def __init__(self) -> None:
+        self.rear = None
+        self.front = None
+    def isEmpty(self):
+        return self.front == self.front ==None
+    def Enqueue(self,x):
+        node = Node(x)
+        if self.isEmpty():
+            self.front = self.rear = node
+            return
+        self.rear.next = node
+        self.rear = node
+    def Dequeue(self,x):
+        if self.isEmpty():
+            return -1
+        elif self.rear == self.front:
+            self.rear = self.front = None
+        else:
+            self.front = self.front.next
+    def get_front(self):
+        if not self.front:
+            return -1
+        return self.front.val
         
