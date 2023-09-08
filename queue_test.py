@@ -61,4 +61,7 @@ class List_Queue(object):
         if not self.front:
             return -1
         return self.front.val
-        
+    def get_rear(self):
+        if not self.rear:
+            return -1
+        return self.rear.val

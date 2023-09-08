@@ -10,7 +10,10 @@ def check_sign(check_object):
     for s in check_object:
         if s in sign:
             check_stack.push(s)
-            print(s)
+            # print(s)
+    if check_stack.s_top == -1:
+        return True
+    return False
 # while True:
 #     input_str = input()
 #     if input_str == 'q':
